@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="190dp"
+            android:layout_height="135dp">
+            <com.example.kimjeonghwan.fixyou.CheckableImageView
+                android:id="@+id/signup_interest_image"
+                android:layout_width="190dp"
+                android:layout_height="135dp"
+                android:scaleType="fitXY"/>
+            <FrameLayout
+                android:id="@+id/signup_interest_check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:background="#66000000">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_checked"
+                    />
+            </FrameLayout>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/signup_interest_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:text="영화"/>
+    </LinearLayout>
+</LinearLayout>

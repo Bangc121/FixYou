@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="5dp">
+        <FrameLayout
+            android:id="@+id/mymeetup_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/meetup_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map_search"/>
+            <TextView
+                android:id="@+id/meetup_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="bottom"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:text="title" />
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

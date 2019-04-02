@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="UnusedAttribute">
+    <LinearLayout
+        android:id="@+id/recentVodLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <FrameLayout
+            android:layout_width="130dp"
+            android:layout_height="90dp">
+            <FrameLayout
+                android:layout_width="125dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp">
+                <ImageView
+                    android:id="@+id/recentVodThumbnail"
+                    android:layout_width="125dp"
+                    android:layout_height="85dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kakao_default_profile_image"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="right|bottom"
+                tools:ignore="RtlHardcoded">
+                <TextView
+                    android:id="@+id/recentVodTime"
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:textColor="@color/white"
+                    android:background="#48000000"
+                    android:gravity="center"
+                    android:text="1111" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+                <ProgressBar
+                    android:id="@+id/vodProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_gravity="center"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/recentVodName"
+            android:layout_width="125dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/textBlack"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/recentVodCreator"
+            android:layout_width="125dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="프로필" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+            android:title="모바일 지갑" />
+        <item
+            android:id="@+id/nav_cash"
+            android:icon="@drawable/ic_monetization_on_black_24dp"
+            android:title="별풍선/아이템" />
+        <item
+            android:id="@+id/nav_meetup"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="그룹관리" />
+        <item
+            android:id="@+id/nav_broadcast"
+            android:icon="@drawable/ic_videocam_black_24dp"
+            android:title="방송하기" />
+        <item
+            android:id="@+id/nav_upload"
+            android:icon="@drawable/ic_file_upload_black_24dp"
+            android:title="VOD 업로드" />
+    </group>
+
+    <item android:title="고객센터">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_perm_identity_black_24dp"
+                android:title="1:1문의" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_perm_phone_msg_black_24dp"
+                android:title="전화상담" />
+        </menu>
+    </item>
+
+</menu>

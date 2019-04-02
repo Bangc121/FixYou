@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1067110288625",
+    "firebase_url": "https://fixyou-39591.firebaseio.com",
+    "project_id": "fixyou-39591",
+    "storage_bucket": "fixyou-39591.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067110288625:android:8792108b82b41f89",
+        "android_client_info": {
+          "package_name": "com.example.kimjeonghwan.fixyou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067110288625-457vhvndcq1q356cbrn63sijlmd9d0h8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kimjeonghwan.fixyou",
+            "certificate_hash": "6f1fde4bbc4c768e090c33f077705e0ba4748006"
+          }
+        },
+        {
+          "client_id": "1067110288625-4unsn15dip8h8kaqg96riaabre9ki6m3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNT1ceTyGNrNEJWA-_Ow1oII8ZqKNZeWQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067110288625-4unsn15dip8h8kaqg96riaabre9ki6m3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

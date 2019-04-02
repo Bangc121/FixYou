@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFEEE4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:text="FIX YOU"
+            android:textColor="@color/textBlack"
+            android:textSize="50sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="UselessParent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/google_login_button"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/custom_google_button"
+            android:padding="5dp"
+            android:layout_marginVertical="3dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/google_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/google_logo"
+                android:layout_gravity="center_vertical"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/textBlack"
+                android:textSize="18sp"
+                android:text="@string/google_login"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/kakao_login_button"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/custom_kakao_button"
+            android:padding="5dp"
+            android:layout_marginVertical="3dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+            <com.kakao.usermgmt.LoginButton
+                android:id="@+id/kakao_login"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/kakaolink_btn_small_ov"
+                android:layout_gravity="center_vertical"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#1e1e1e"
+                android:textSize="18sp"
+                android:text="@string/kakao_login"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/naver_login_button"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/custom_naver_button"
+            android:padding="5dp"
+            android:layout_marginVertical="3dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+            <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+                android:id="@+id/naver_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/naver_logo"
+                android:layout_gravity="center_vertical"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffff"
+                android:textSize="18sp"
+                android:text="@string/naver_login"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/email_login_button"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/custom_email_button"
+            android:padding="5dp"
+            android:layout_marginVertical="3dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+            <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_email_white_24dp"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffff"
+                android:textSize="18sp"
+                android:text="@string/email_login"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center">
+        <TextView
+            android:id="@+id/email_signup_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@color/textBlack"
+            android:text="이메일로 회원가입"/>
+    </LinearLayout>
+</LinearLayout>
